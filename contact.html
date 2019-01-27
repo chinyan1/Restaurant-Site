@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+  Name: Chinyan Ollor
+  Date Created: 1/17/2019
+  Most recent revision:
+  -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width:device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <link href="styles/restaurantstyle.css" rel="stylesheet" type="text/css" />
+    <script>
+function submitForm() {
+    return confirm('Information Received');
+}
+</script>
+    <style>
+
+    label, fieldset{
+        font-size: .85em;
+    }
+
+    input[type=text] {
+        border: 1px solid #0d1f2d;
+        width: 20%;
+        padding: 4px 4px;
+        margin: 5px 0;
+        box-sizing: border-box;
+        font-size: .85em;
+    }
+
+    select, textarea {
+        margin: 8px 0;
+        font-size: .85em;
+    }
+
+    input[type=submit] {
+        font-size: .85em;
+        background-color: #546a7b;
+        color: #fef9ff;
+        padding: 4px 8px;
+    }
+
+    input[type=submit]:hover {
+        background-color: #f2eded;
+        color: #546a7b;
+    }
+
+    textarea {
+        width: 60%;
+        height: 100px;
+        padding: 10px 160px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #0d1f2d;
+        border-radius: 2px;
+        background-color: #fff;
+        resize: none;
+    }
+form {
+  font-size: .85em;
+  margin: auto;
+}
+#submit {
+  background-color:#363020;
+  margin-bottom: 12px;
+}
+    </style>
+
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1 class="text-center">Sam's Sammies</h1>
+      <h4 class="text-center mt-5">Best Cuisine in Town</h4>
+    </div>
+
+      <nav>
+
+        <a href="home.html" class="btn btn-info btn-md"><span class="glyphicon glyphicon-home"></span>Home
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="btn" href="menu.html">Menu</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="btn" href="contact.html">Contact</a>
+
+      </nav>
+
+
+<section>
+  <form method="POST">
+
+    <center><label for="name">Name:</label><input type="text" id="name" name="name" /></center><br />
+    <center><label for="email">Email:</label><input type="text" id="email" name="email" /></center><br />
+    <center><label for="phone">Phone:</label><input type="text" id="phone" name="phone" /></center><br />
+
+    <center><label for="inquiry">Reason for Inquiry:</label>
+      <select id="inquiry" name="inquiry">
+        <option value="default" selected>Catering</option>
+        <option value="PrivateParty">Private Party</option>
+        <option value="Feedback">Feedback</option>
+        <option value="Other">Other</option>
+      </select></center><br />
+
+    <center><label for="additionalInformation">Additional Information:</label>
+      <textarea id="info" name="info"></textarea></center><br />
+
+    <center><p>Have you been to the restaurant? &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="choice1" name="questionnaire" value="No" />
+          <label for="choice1">No</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="choice2" name="questionnaire" value="Yes" />
+          <label for="choice2">Yes</label><br />
+    </p></center>
+
+    <center><p>Best days to Contact you: &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="M" name="day" value="M" />
+          <label for="M">M</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="T" name="day" value="T" />
+          <label for="T">T</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="W" name="day" value="W" />
+          <label for="W">W</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="Th" name="day" value="Th" />
+          <label for="Th">Th</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="F" name="day" value="F" />
+          <label for="F">F</label><br />
+      </p></center>
+
+
+      <center><input type=submit id="submit" value="Submit" onclick="submitForm()" /></center>
+    </div>
+</form>
+
+<footer>
+  <center><p>9900 Sandwich Dr, Minneapolis, MN 55441<br />651-999-9999<p></center>
+</footer>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+      <script type="text/javascript" src="scripts.js"></script>
+          <noscript>Page best viewed with JavaScript enabled!</noscript>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  </body>
+</html>

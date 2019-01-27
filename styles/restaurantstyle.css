@@ -1,0 +1,48 @@
+/*
+Creator: Ngochinyan Ollor
+Date created: 1/23/2019
+Date last modified:
+*/
+
+body {
+  background-color: white;
+  font-family: verdana, helvetica, sans-serif;
+  color: black;
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.35em;
+}
+header, footer {
+  background-color: #ebebe0;
+  text-align: center;
+  height: 50px;
+  color: black;
+  border: thin solid black;
+}
+footer {
+  padding-top: 12px;
+}
+h1 {
+  color: black;
+  text-align: center;
+}
+nav {
+  border-top: thin black solid;
+  border-bottom: thin black solid;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 4px;
+
+}
+  nav .btn {
+  background-color: #ebebe0;
+  color: black;
+
+}
+  nav .btn:hover {
+      font-weight: bold;
+  }
+a .btn:visited {
+  background-color: #FBFDF2;
+  color: #363020;
+}
